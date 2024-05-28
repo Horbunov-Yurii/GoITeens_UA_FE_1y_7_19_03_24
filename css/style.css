@@ -1,11 +1,11 @@
 :root {
     --background-color: #000;
     --text-color: #F5EBEB;
---accent-color: #A93B59;
---addtext: #FFFFFF;
---addaccent-color: rgba(185, 106, 127, 0.50);
---cardtitle-color: #1F140F;
---carddesk-color: #444;
+    --accent-color: #A93B59;
+    --addtext: #FFFFFF;
+    --addaccent-color: rgba(185, 106, 127, 0.50);
+    --cardtitle-color: #1F140F;
+    --carddesk-color: #444;
 
 }
 body {
@@ -17,16 +17,61 @@ body {
 /* font-family: "Playfair Display", serif; */
 /* font-family: "Source Sans 3", sans-serif; */
 .header-logo {
-color: var(--text-color);
-font-family: "Spline Sans";
-font-size: 16px;
-font-weight: 400;
-line-height: 1.18;
-text-transform: uppercase;
+    color: var(--text-color);
+    font-family: "Spline Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.18;
+    text-transform: uppercase;
 }
 .header-link {
-color: var(--text-color);
-font-size: 20px;
-font-weight: 400;
-line-height: 1.25;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.hero-title1 {
+    color: var(--accent-color);
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+}
+.hero-title2 {
+    color: var(--text-color);
+    font-family: "Playfair Display";
+    font-size: 86px;
+    font-weight: 400;
+    line-height: 60px; /* 69.767% */
+    text-transform: uppercase;
+}
+.hero-title3 {
+    color: var(--accent-color);
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+}
+.hero-text {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-transform: capitalize;
+}
+.hero-btn {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.25;
+    background-color: var(--accent-color);
+}
+.hero-desk {
+    color: var(--addtext);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-transform: uppercase;
 }
