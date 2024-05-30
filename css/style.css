@@ -125,3 +125,34 @@ body {
     letter-spacing: 1.6px;
     text-transform: uppercase;
 }
+
+/* секція details */
+.details-title{
+    color: var(--accent-color);
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.33;
+}
+
+.details-subtitle{
+    color: var(--addtext);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.25;
+
+}
+
+.details-text{
+    color: var(--addtext);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+.details-desk{
+    color: var(--addtext);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25;
+}
