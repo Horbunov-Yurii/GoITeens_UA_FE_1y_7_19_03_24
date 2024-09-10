@@ -12,11 +12,32 @@ body {
     background-color: #444;
     font-family:"Source Sans 3" ;
 }
+
+.container {
+    width: 1328px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0 auto;
+}
 /* font-family: "Spline Sans", sans-serif; */
 /* font-family: "Rubik", sans-serif; */
 /* font-family: "Playfair Display", serif; */
 /* font-family: "Source Sans 3", sans-serif; */
+
+.header {
+    padding-top: 24px;
+}
+
+.header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .header-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     color: var(--text-color);
     font-family: "Spline Sans";
     font-size: 16px;
@@ -24,12 +45,31 @@ body {
     line-height: 1.18;
     text-transform: uppercase;
 }
+
+.header-list {
+    display: flex;
+    gap: 32px;
+}
+
 .header-link {
     color: var(--text-color);
     font-size: 20px;
     font-weight: 400;
     line-height: 1.25;
 }
+
+
+
+
+.hero {
+    padding-top: 109px;
+    padding-bottom: 94px;
+}
+
+.hero-title {
+
+}
+
 .hero-title1 {
     color: var(--accent-color);
     font-family: "Playfair Display";
@@ -37,14 +77,20 @@ body {
     font-style: italic;
     font-weight: 500;
     line-height: 1.25; /* 125% */
+    display: block;
 }
 .hero-title2 {
+    display: inline-block;
     color: var(--text-color);
     font-family: "Playfair Display";
     font-size: 86px;
     font-weight: 400;
     line-height: 60px; /* 69.767% */
     text-transform: uppercase;
+    margin-left: 110px;
+    margin-right: 24px;
+    margin-top: 12px;
+    margin-bottom: 24px;
 }
 .hero-title3 {
     color: var(--accent-color);
@@ -60,6 +106,8 @@ body {
     font-weight: 400;
     line-height: 1.25;
     text-transform: capitalize;
+    margin-left: 110px;
+    margin-bottom: 42px;
 }
 .hero-btn {
     color: var(--text-color);
@@ -67,13 +115,42 @@ body {
     font-weight: 400;
     line-height: 1.25;
     background-color: var(--accent-color);
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    width: 437px;
+    border-radius: 15px;
+    border: none;
+    margin-left: 110px;
+    margin-bottom: 437px;
 }
+
+.hero-list {
+    display: flex;
+    gap: 124px;
+    justify-content: center;
+}
+
+.hero-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .hero-desk {
     color: var(--addtext);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
     text-transform: uppercase;
+    width: 201px;
+    margin-top: 2px;
+}
+
+.hero-item:nth-child(2) > .hero-desk {
+    width: 215px;
 }
  /* Секція каталог */
  .catalog-title {

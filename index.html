@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Spline+Sans:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
     <header class="header">  
-      <a href="./index.html"
-        class="header-logo"><img src="./img/logo.png" alt="logo" class="logo-img" />FlowerLover</a
-      >
+      <div class="container">
+      <a href="./index.html" class="header-logo"><img src="./img/logo.png" alt="logo" class="logo-img" />FlowerLover</a>
       <nav class="header-nav">
         <ul class="header-list">
           <li class="header-item">
@@ -35,11 +36,13 @@
           </li>
         </ul>
       </nav>
+    </div>
     </header>
     <main>
       <!-- Секція герой -->
       <section class="hero">
-        <h1><span class="hero-title1">Неймовірні</span> <span class="hero-title2">Букети</span> <span class="hero-title3">зі свіжих квітів</span></h1>
+        <div class="container">
+        <h1 class="hero-title"><span class="hero-title1">Неймовірні</span> <span class="hero-title2">Букети</span> <span class="hero-title3">зі свіжих квітів</span></h1>
         <p class="hero-text">З доставкою по Києву протягом 1 години</p>
         <button type="button" class="hero-btn">ЗАМОВИТИ КВІТИ</button>
         <ul class="hero-list">
@@ -56,9 +59,11 @@
             <p class="hero-desk">більше 1000 сортів квітів з усього світу</p>
           </li>
         </ul>
+      </div>
       </section>
       <!-- Каталог -->
       <section class="catalog">
+        <div class="container">
         <h2 class="catalog-title">Каталог</h2>
         <h3 class="catalog-subject">Доставка квітів в Києві</h3>
         <ul class="catalog-list">
@@ -145,9 +150,11 @@
           </li>
         </ul>
         <button type="button" class="catalog-btn">Дивитись всі</button>
+      </div>
       </section>
       <!-- details section -->
       <section class="details">
+        <div class="container">
         <h2 class="details-title">Якість в деталях</h2>
         <ul class="details-list">
           <li class="details-item">
@@ -180,9 +187,11 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
       <!-- Секція форми -->
       <section class="form">
+        <div class="container">
         <h2 class="form-title">Не можете визначитись з вибором букету?</h2>
         <p class="form-text">
           <span class="form-desk">Відправте заявку</span> і Вам зателефонують протягом однієї
@@ -219,9 +228,11 @@
             <p class="form-saptitle"><span class="form-span">Оформить</span> для Вас подарунок-сюрприз</p>
           </li>
         </ul>
+      </div>
       </section>
       <!--Наші кліенти-->
       <section>
+        <div class="container">
         <h2>Наші клієнти</h2>
         <ul>
           <li><img src="./img/cliant_1.jpg" alt="cliant_1"></li>
@@ -236,6 +247,7 @@
       </section>
     </main>
     <footer>
+      <div class="container">
       <nav>
         <ul>
           <li><a href="./index.html">Головна</a></li>
@@ -270,6 +282,7 @@
           </li>
         </ul>
       </address>
+    </div>
     </footer>
   </body>
 </html>
