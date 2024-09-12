@@ -9,7 +9,7 @@
 
 }
 body {
-    background-color: #444;
+    background-color: var(--background-color);
     font-family:"Source Sans 3" ;
 }
 
@@ -64,6 +64,10 @@ body {
 .hero {
     padding-top: 109px;
     padding-bottom: 94px;
+    background-image: url(../img/herobg.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 768px 640px;
 }
 
 .hero-title {
@@ -159,7 +163,14 @@ body {
     font-size: 36px;
     font-weight: 600;
     line-height: 1.33;
+    margin-bottom: 101px;
 }
+
+.catalog-box {
+    border-radius: 15px;
+    background: rgba(185, 106, 127, 0.50);
+}
+
 .catalog-subject{
     color: var(--addtext);
     text-align: center;
@@ -167,7 +178,41 @@ body {
     font-size: 36px;
     font-weight: 600;
     line-height: 1.33;
+    margin-bottom: 20px;
 }
+
+.catalog-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #B96A7F;
+    border-radius: 15px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+.catalog-item {
+    display: flex;
+    align-items: center;
+    gap: 74px;
+}
+
+.catalog-item:nth-child(2) {
+    gap: 157px;
+}
+
+.catalog-item:nth-child(3) {
+    gap: 70px;
+}
+
+.catalog-item:nth-child(4) {
+    gap: 148px;
+}
+
+.catalog-item:nth-child(5) {
+    gap: 63px;
+}
+
 .catalog-text{
     color: var(--addtext);
     font-size: 18px;
@@ -177,6 +222,7 @@ body {
 
 .catalog-img {
     width: 16px;
+    height: 16px;
     fill: var(--addtext);
 }
 
