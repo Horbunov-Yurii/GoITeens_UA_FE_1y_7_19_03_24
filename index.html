@@ -4,185 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Spline+Sans:wght@300..700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body style="background-color: gray;">
-    <header>
-     <a href="./index.html"><img src="./img/logo.png" alt="logo">FlowerLover</a>  
-      <nav>
-        <ul>
-            <li>
-                <a href="">Головна</a>
+<body>
+    <header class="header">
+     <a href="./index.html" class="header-logo"><img src="./img/logo.png" alt="logo" class="header-img">FlowerLover</a>  
+      <nav class="header-nav">
+        <ul class="header-list">
+            <li class="header-item">
+                <a href="" class="header-link">Головна</a>
             </li>
-            <li>
-                <a href="">Каталог</a>
+            <li class="header-item">
+                <a href="" class="header-link">Каталог</a>
             </li>
-            <li>
-                <a href="">Про нас</a>
+            <li class="header-item">
+                <a href="" class="header-link">Про нас</a>
             </li>
-            <li>
-                <a href="">Як замовити</a>
+            <li class="header-item">
+                <a href="" class="header-link">Як замовити</a>
             </li>
-            <li>
-                <a href="">Відгуки</a>
+            <li class="header-item">
+                <a href="" class="header-link">Відгуки</a>
             </li>
-            <li>
-                <a href="">Контакти</a>
+            <li class="header-item">
+                <a href="" class="header-link">Контакти</a>
             </li>
         </ul>
       </nav>
     </header>
     <main>
         <!-- Секція герой -->
-        <section>
-            <h1>Неймовірні Букети зі свіжих квітів</h1>
-            <p>З доставкою по Києву протягом 1 години</p>
-            <button type="button">ЗАМОВИТИ КВІТИ</button>
-            <ul>
-                <li>
-                    <img src="./img/rosa.png" alt="Роза">
-                    <p>Щоденне оновлення свіжих квітів</p>
+        <section class="hero">
+            <h1 class="hero-title">Неймовірні Букети зі свіжих квітів</h1>
+            <p class="hero-text">З доставкою по Києву протягом 1 години</p>
+            <button type="button" class="hero-btn">ЗАМОВИТИ КВІТИ</button>
+            <ul class="hero-list">
+                <li class="hero-item">
+                    <img src="./img/rosa.png" alt="Роза" class="hero-img">
+                    <p class="hero-desk">Щоденне оновлення свіжих квітів</p>
                 </li>
-                <li>
-                    <img src="./img/location.png" alt="Локація">
-                    <p>безкоштовна доставка в будь яку точку міста</p>
+                <li class="hero-item">
+                    <img src="./img/location.png" alt="Локація" class="hero-img">
+                    <p class="hero-desk">безкоштовна доставка в будь яку точку міста</p>
                 </li>
-                <li>
-                    <img src="./img/earth.png" alt="Земля">
-                    <p>більше 1000 сортів квітів з усього світу</p>
+                <li class="hero-item">
+                    <img src="./img/earth.png" alt="Земля" class="hero-img">
+                    <p class="hero-desk">більше 1000 сортів квітів з усього світу</p>
                 </li>
             </ul>
         </section>
         <!-- Каталог -->
-        <section>
-            <h2>Каталог</h2>
-            <h3>Доставка квітів в Києві</h3>
-            <ul>
-                <li>
-                    <p>Ціна ...</p>
-                    <img src="./img/strelochka.png" alt="Стрілочка">
+        <section class="catalog">
+            <h2 class="catalog-title">Каталог</h2>
+            <h3 class="catalog-caption">Доставка квітів в Києві</h3>
+            <ul class="catalog-list">
+                <li class="catalog-item">
+                    <p class="catalog-text">Ціна ...</p>
+                    <img src="./img/strelochka.png" alt="Стрілочка" class="catalog-img">
                 </li>
-                <li>
-                    <p>Квіти ...</p>
-                    <img src="./img/strelochka.png" alt="Стрілочка">
+                <li class="catalog-item">
+                    <p class="catalog-text">Квіти ...</p>
+                    <img src="./img/strelochka.png" alt="Стрілочка" class="catalog-img">
                 </li>
-                <li>
-                    <p>Кому ...</p>
-                    <img src="./img/strelochka.png" alt="Стрілочка">
+                <li class="catalog-item">
+                    <p class="catalog-text">Кому ...</p>
+                    <img src="./img/strelochka.png" alt="Стрілочка" class="catalog-img">
                 </li>
-                <li>
-                    <p>Привід...</p>
-                    <img src="./img/strelochka.png" alt="Стрілочка">
+                <li class="catalog-item">
+                    <p class="catalog-text">Привід...</p>
+                    <img src="./img/strelochka.png" alt="Стрілочка" class="catalog-img">
                 </li>
-                <li>
-                    <p>Стиль ...</p>
-                    <img src="./img/strelochka.png" alt="Стрілочка">
-                </li>
-            </ul>
-            <h4>Хіт продажів</h4>
-            <ul>
-                <li>
-                    <img src="./img/flower1.png" alt="Букет квіт"><img src="./img/heart.png" alt="Серце">
-                    <h5>500 ₴</h5>
-                    <p>Мінібукет 1400-2</p>
-                </li>
-                <li>
-                    <img src="./img/flower2.png" alt="Букет квіт"><img src="./img/heart.png" alt="Серце">
-                    <h5>800 ₴</h5>
-                    <p>Мінібукет 1600-6</p>
-                </li>
-                <li>
-                    <img src="./img/flower3.png" alt="Букет квіт"><img src="./img/heart.png" alt="Серце">
-                    <h5>1000 ₴</h5>
-                    <p>Троянда Freedom 51 шт.</p>
-                </li>
-                <li>
-                    <img src="./img/flower4.png" alt="Букет квіт"><img src="./img/heart.png" alt="Серце">
-                    <h5>680 ₴</h5>
-                    <p>Мінібукет 1400-3</p>
-                </li>
-                <li>
-                    <img src="./img/flower5.png" alt="Букет квіт"><img src="./img/heart.png" alt="Серце">
-                    <h5>450 ₴</h5>
-                    <p>«Бархатний сезон»</p>
-                </li>
-                <li>
-                    <img src="./img/flower6.png" alt="Букет квіт"><img src="./img/heart.png" alt="Серце">
-                    <h5>56 ₴</h5>
-                    <p>Нобіліс</p>
+                <li class="catalog-item">
+                    <p class="catalog-text">Стиль ...</p>
+                    <img src="./img/strelochka.png" alt="Стрілочка" class="catalog-img">
                 </li>
             </ul>
-            <button type="button">Дивитись всі</button>
+            <h4 class="hits-title">Хіт продажів</h4>
+            <ul class="hits-list">
+                <li class="hits-item">
+                    <img src="./img/flower1.png" alt="Букет квіт"><img src="./img/heart.png" alt="Серце" class="hits-img">
+                    <h5 class="hits-caption">500 ₴</h5>
+                    <p class="hits-text">Мінібукет 1400-2</p>
+                </li>
+                <li class="hits-item">
+                    <img src="./img/flower2.png" alt="Букет квіт"><img src="./img/heart.png" alt="Серце" class="hits-img">
+                    <h5 class="hits-caption">800 ₴</h5>
+                    <p class="hits-text">Мінібукет 1600-6</p>
+                </li>
+                <li class="hits-item">
+                    <img src="./img/flower3.png" alt="Букет квіт"><img src="./img/heart.png" alt="Серце" class="hits-img">
+                    <h5 class="hits-caption">1000 ₴</h5>
+                    <p class="hits-text">Троянда Freedom 51 шт.</p>
+                </li>
+                <li class="hits-item">
+                    <img src="./img/flower4.png" alt="Букет квіт"><img src="./img/heart.png" alt="Серце" class="hits-img">
+                    <h5 class="hits-caption">680 ₴</h5>
+                    <p class="hits-text">Мінібукет 1400-3</p>
+                </li>
+                <li class="hits-item">
+                    <img src="./img/flower5.png" alt="Букет квіт"><img src="./img/heart.png" alt="Серце" class="hits-img">
+                    <h5 class="hits-caption">450 ₴</h5>
+                    <p class="hits-text">«Бархатний сезон»</p>
+                </li>
+                <li class="hits-item">
+                    <img src="./img/flower6.png" alt="Букет квіт"><img src="./img/heart.png" alt="Серце" class="hits-img">
+                    <h5 class="hits-caption">56 ₴</h5>
+                    <p class="hits-text">Нобіліс</p>
+                </li>
+            </ul>
+            <button type="button"  class="hits-btn">Дивитись всі</button>
         </section>
         <!-- detalis section -->
-        <section>
-            <h2>Якість в деталях</h2>
-            <ul>
-                <li>
-                    <img src="./img/detail-flower1.jpg" alt="flowers">
-                    <h3>Контроль свіжості квітів </h3>
-                    <p>Ми співпрацюємо з кращими постачальниками квітів і готові запропонувати Вам <span>широкий асортимент квітів,</span>  починаючи від місцевих сортів і закінчуючи рідкісними імпортованими варіантами.
+        <section class="details">
+            <h2 class="details-title">Якість в деталях</h2>
+            <ul class="detalis-list">
+                <li class="detalis-item">
+                    <img src="./img/detail-flower1.jpg" alt="flowers" class="detalis-img">
+                    <h3 class="detalis-caption">Контроль свіжості квітів </h3>
+                    <p class="detalis-text">Ми співпрацюємо з кращими постачальниками квітів і готові запропонувати Вам <span>широкий асортимент квітів,</span>  починаючи від місцевих сортів і закінчуючи рідкісними імпортованими варіантами.
                         Ваша близька людина отримає найкращий подарунок, адже ми ретельно підбираємо кожну квітку для вашого букету.</p>
                 </li>
-                <li>
-                    <img src="./img/detail-flower2.jpg" alt="worker">
-                    <h3>Оформлення букетів</h3>
-                    <p>Ми готові зібрати <span>унікальний букет по індивідуальному замовленню .</span> Наші флористи втілять в життя будь яку Вашу ідею!</p>
+                <li class="detalis-item">
+                    <img src="./img/detail-flower2.jpg" alt="worker" class="detalis-img">
+                    <h3 class="detalis-caption">Оформлення букетів</h3>
+                    <p class="detalis-text">Ми готові зібрати <span>унікальний букет по індивідуальному замовленню .</span> Наші флористи втілять в життя будь яку Вашу ідею!</p>
                 </li>
-                <li>
-                    <img src="./img/detail-flower3.jpg" alt="flowers">
-                    <h3>Швидка доставка</h3>
-                    <p>Ми робимо доставки по Україні протягом <span>3-х годин</span>  з моменту оплати замовлення.  </p>
+                <li class="detalis-item">
+                    <img src="./img/detail-flower3.jpg" alt="flowers" class="detalis-img">
+                    <h3 class="detalis-caption">Швидка доставка</h3>
+                    <p class="detalis-text">Ми робимо доставки по Україні протягом <span>3-х годин</span>  з моменту оплати замовлення.  </p>
                 </li>
             </ul>
         </section>
 
         <!-- form section -->
-            <section>
-                <h2>Не можете визначитись з вибором букету?</h2>
-                <p><span>Відправте заявку</span> і Вам зателефонують протягом однієї хвилини</p>
+            <section class="form">
+                <h2 class="form-title">Не можете визначитись з вибором букету?</h2>
+                <p class="form-text"><span>Відправте заявку</span> і Вам зателефонують протягом однієї хвилини</p>
            
-                <form action="">
-                    <input type="text" placeholder="name">
-                    <img src="./img/user-icon.png" alt="">
-                    <input type="tel" placeholder="phone num">
-                    <img src="./img/tel-icon.png" alt="">
-                    <button type="submit">Залишити заявку</button>
+                <form class="form-form">
+                    <input type="text" placeholder="name" class="form-input">
+                    <img src="./img/user-icon.png" alt="" class="form-img">
+                    <input type="tel" placeholder="phone num" class="form-input">
+                    <img src="./img/tel-icon.png" alt="" class="form-img">
+                    <button type="submit" class="form-btn">Залишити заявку</button>
                     <!-- <input type="submit"> -->
                 </form>
-                <h3>Наш менеджер по телефону: </h3>
-                <ul>
-                    <li>
-                        <img src="./img/checkmark-icon.png" alt="">
-                        <p><span>Відповість на будь які запитання</p>
+                <h3 class="form-caption">Наш менеджер по телефону: </h3>
+                <ul class="form-list">
+                    <li class="form-item">
+                        <img src="./img/checkmark-icon.png" alt="" class="form-icon">
+                        <p class="form-desk"><span>Відповість на будь які запитання</p>
                     </li>
-                    <li>
-                        <img src="./img/checkmark-icon.png" alt="">
-                        <p><span>Підбере рішення</span> відповідно 
+                    <li class="form-item">
+                        <img src="./img/checkmark-icon.png" alt="" class="form-icon">
+                        <p class="form-desk"><span>Підбере рішення</span> відповідно 
                             до ваших запитів та бажань</p>
                     </li>
-                    <li>
-                        <img src="./img/checkmark-icon.png" alt="">
+                    <li class="form-item">
+                        <img src="./img/checkmark-icon.png" alt="" class="form-icon">
                         <p><span>Підготує унікальну пропозицію</span>
                             та детально розповість Вам про наші букети</p>
                     </li>
-                    <li>
-                        <img src="./img/checkmark-icon.png" alt="">
-                        <p><span>Оформить</span> для Вас подарунок-сюрприз</p>
+                    <li class="form-item">
+                        <img src="./img/checkmark-icon.png" alt="" class="form-icon">
+                        <p class="form-desk"><span>Оформить</span> для Вас подарунок-сюрприз</p>
                     </li>
                 </ul>
             </section>
             <!-- our clioents section -->
-            <section>
-                <h2>Наші клієнти</h2>
-                <ul>
-                    <li><a href="#"><img src="./img/larrow.png" alt="back"></a></li>
-                    <li><a href="#"><img src="./img/rarrow.png" alt="forward"></a></li>
+            <section class="clients">
+                <h2 class="clients-title">Наші клієнти</h2>
+                <ul class="clients-list">
+                    <li class="clients-item"><a href="#" class="clients-link"><img src="./img/larrow.png" alt="back" class="clients-images"></a></li>
+                    <li class="clients-item"><a href="#" class="clients-link"><img src="./img/rarrow.png" alt="forward" class="clients-images"></a></li>
                 </ul>
-                <ul>
-                    <li><img src="./img/client-1.jpg" alt="client`s photo"></li>
-                    <li><img src="./img/client-2.jpg" alt=""></li>
-                    <li><img src="./img/client-3.jpg" alt=""></li>
-                    <li><img src="./img/client-4.jpg" alt=""></li>
+                <ul class="client-list">
+                    <li class="client-itm"><img class="client-photo" src="./img/client-1.jpg" alt="client`s photo"></li>
+                    <li class="client-itm"><img class="client-photo" src="./img/client-2.jpg" alt=""></li>
+                    <li class="client-itm"><img class="client-photo" src="./img/client-3.jpg" alt=""></li>
+                    <li class="client-itm"><img class="client-photo" src="./img/client-4.jpg" alt=""></li>
                 </ul>
 
             </section>
