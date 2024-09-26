@@ -5,7 +5,11 @@ body{
 /* font-family: "Playfair Display", serif; */
 /* font-family: "Source Sans 3", sans-serif; */
 /* font-family: "Spline Sans", sans-serif; */
-
+.container{
+    width: 1328px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
 .header{
     padding-top: 24px;
 }
@@ -109,10 +113,33 @@ font-family: "Playfair Display";
 font-size: 36px;
 font-weight: 600;
 line-height: normal;
+margin-bottom: 20px;
 }
 
+.hits-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 75px;
+    row-gap: 30px;
+    justify-content: center;
+}
+.hits-item{
+    flex-basis: calc((100% - 150px) / 3 );
+    position: relative;
+    border-radius: 15px;
+    height: 410px;
+    background-color: white;
+}
+.hits-flowers{
+    width: 100%;
+    
+}
+.hits-img{
+    position: absolute;
+    top: 14px;
+    right: 15px;
+}
 .hits-caption{
-    color: #000;
 font-size: 34px;
 font-weight: 300;
 line-height: normal;
@@ -154,8 +181,29 @@ font-weight: 400;
 line-height: normal;
 text-transform: capitalize;
 }
-
-
+.detalis-box{
+    position: relative;
+    width: 659px;
+}
+.detalis-wrap{
+    background-color: rgba(100, 0, 0, 0.5);
+    position: absolute;
+    top: 34.7%;
+    left: 50%;
+    width:509px;
+    /* width: 100%; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    opacity: 0;
+    transform: rotate(90deg);
+    transform: translate(-50% -50%);
+}
+.detalis-wrap:hover{
+    opacity: 1;
+}
+.detalis-lorem{
+    color: red;
+}
 .detalis-text{
     color: #FFF;
 font-size: 20px;
