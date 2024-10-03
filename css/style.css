@@ -232,8 +232,6 @@ pointer-events: none;
 
 
 .modal {
-    width: 528px;
-height: 581px;
 background-color: white;
 padding: 40px;
 position: relative;
@@ -265,6 +263,11 @@ border: 1px solid rgba(33, 33, 33, 0.20);
 padding-left: 50px;
 padding-right: 30px;
 }
+
+
+
+
+
 .modal-com {
     width: 448px;
 height: 120px;
@@ -306,6 +309,17 @@ height: 15px;
 
 }
 
+.modal-input:hover,
+.modal-input:focus {
+border: none;
+outline: 1px solid red;
+}
+
+.modal-input:hover + .modal-icon,
+.modal-input:focus + .modal-icon {
+fill:  red;
+}
+
 .chek-span {
     color: #757575;
 font-size: 14px;
@@ -341,6 +355,11 @@ margin-left: auto;
 margin-right: auto;
 display: block;
 }
+
+.modal-btn:active {
+background-color: red;
+}
+
 .btn-close {
     width: 40px;
     height: 40px;
@@ -352,11 +371,26 @@ display: block;
     position: absolute;
     right: 10px;
     top: 10px;
+    border: none;
+    outline: 1px solid gray;
 }
+
+
+.btn-close:hover,
+.btn-close:focus {
+/* border: none;
+outline: 1px solid gray; */
+.icon-close {
+fill: red;
+}
+}
+
 .icon-close {
     width: 20px;
     height: 20px;
     fill: green;
 }
+
+
 
 

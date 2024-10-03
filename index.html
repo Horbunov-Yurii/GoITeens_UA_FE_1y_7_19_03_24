@@ -263,20 +263,21 @@
             <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
             <label for="name" class="modal-signature">Ім'я</label>
             <div  class="modal-wraper">
-                <input type="text" id="name" class="modal-input">
+                <input type="text" id="name" class="modal-input" required>
             <svg class="modal-icon" >
                 <use href="./img/symbol-defs.svg#icon-user"></use>
             </svg>
         </div >
             <label for="phone" class="modal-signature">Телефон</label>
            <div  class="modal-wraper">
-             <input type="tel" id="phone" class="modal-input">
+             <input type="tel" id="phone" class="modal-input" required pattern="^\+?3?8?(0\d{9})$" placeholder="+380XXXXXXXXX">
             <svg class="modal-icon">
                 <use href="./img/symbol-defs.svg#icon-phone"></use>
             </svg>
         </div >
             <label for="mail" class="modal-signature">Пошта</label>
-            <div  class="modal-wraper"><input type="email" name="" id="mail" class="modal-input">
+            <div  class="modal-wraper">
+            <input type="email" name="" id="mail" class="modal-input" required>
             <svg class="modal-icon">
                 <use href="./img/symbol-defs.svg#icon-mail"></use>
             </svg>
@@ -284,7 +285,7 @@
         <label for="com" class="modal-signature">Коментар</label>
             <textarea name="" id="com" class="modal-com" placeholder="Введіть текст"></textarea>
             <label class="modal-chek">
-                <input type="checkbox" class="chek-input"> 
+                <input type="checkbox" class="chek-input" required> 
                 <span class="chek-span">Погоджуюся з розсилкою та приймаю</span> 
                 <a href="#" class="check-link"> Умови договору</a>
             </label>
