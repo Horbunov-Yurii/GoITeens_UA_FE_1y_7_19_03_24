@@ -47,7 +47,7 @@
             <div class="container">
             <h1 class="hero-title">Неймовірні Букети зі свіжих квітів</h1>
             <p class="hero-text">З доставкою по Києву протягом 1 години</p>
-            <button type="button" class="hero-btn">ЗАМОВИТИ КВІТИ</button>
+            <button type="button" class="hero-btn" data-modal-open>ЗАМОВИТИ КВІТИ</button>
             <ul class="hero-list">
                 <li class="hero-item">
                     <img src="./img/rosa.png" alt="Роза" class="hero-img">
@@ -257,17 +257,31 @@
     </address>
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
            <form class="modal-form">
             <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
             <label for="name" class="modal-signature">Ім'я</label>
-            <input type="text" id="name" class="modal-input">
+            <div  class="modal-wraper">
+                <input type="text" id="name" class="modal-input">
+            <svg class="modal-icon" >
+                <use href="./img/symbol-defs.svg#icon-user"></use>
+            </svg>
+        </div >
             <label for="phone" class="modal-signature">Телефон</label>
-            <input type="tel" id="phone" class="modal-input">
+           <div  class="modal-wraper">
+             <input type="tel" id="phone" class="modal-input">
+            <svg class="modal-icon">
+                <use href="./img/symbol-defs.svg#icon-phone"></use>
+            </svg>
+        </div >
             <label for="mail" class="modal-signature">Пошта</label>
-            <input type="email" name="" id="mail" class="modal-input">
-            <label for="com" class="modal-signature">Коментар</label>
+            <div  class="modal-wraper"><input type="email" name="" id="mail" class="modal-input">
+            <svg class="modal-icon">
+                <use href="./img/symbol-defs.svg#icon-mail"></use>
+            </svg>
+        </div>           
+        <label for="com" class="modal-signature">Коментар</label>
             <textarea name="" id="com" class="modal-com" placeholder="Введіть текст"></textarea>
             <label class="modal-chek">
                 <input type="checkbox" class="chek-input"> 
@@ -276,10 +290,11 @@
             </label>
             <button type="submit" class="modal-btn">Відправити</button>
            </form> 
-                <button type="button" class="btn-close"><svg class="icon-close">
+                <button type="button" class="btn-close" data-modal-close><svg class="icon-close">
                     <use href="./img/symbol-defs.svg#icon-cross"></use>
                 </svg></button>
         </div>
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
