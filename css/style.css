@@ -396,6 +396,7 @@ line-height: normal;
     justify-content: center;
     align-items: center;
     opacity: 1;
+    transition: opacity 1000ms ;
 }
 
 .is-hidden{
@@ -403,12 +404,19 @@ line-height: normal;
 pointer-events: none;
 }
 
+.is-hidden .modal {
+    transform: translate(2000px, 2000px) rotate(90deg);
+    transition: transform 1s;
+} 
 
 .modal {
 background-color: white;
 padding: 40px;
-position: relative;
-
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+transition: transform 1s;
 }
 .modal-title{
     color: palevioletred;
