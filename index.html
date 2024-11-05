@@ -1,311 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Spline+Sans:wght@300..700&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Spline+Sans:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-     <a href="./index.html" class="header-logo animate__animated animate__bounce"><img src="./img/logo.png" alt="logo" class="header-img">FlowerLover</a>  
+      <div class="container">
+       
+      <a href="./index.html" class="header-link">
+         <svg class="header-img">
+          <use href="./images/symbol-defs.svg#icon-lotos"></use>
+        </svg>
+        <!-- <img src="./images/logo.png" alt="logo-flower" class="header-img"/> -->
+        <span class="logo-name">FlowerLover</span></a>
       <nav class="header-nav">
-        <ul class="header-list animate__animated animate__backInDown">
-            <li class="header-item">
-                <a href="" class="header-link">Головна</a>
-            </li>
-            <li class="header-item">
-                <a href="" class="header-link">Каталог</a>
-            </li>
-            <li class="header-item">
-                <a href="" class="header-link">Про нас</a>
-            </li>
-            <li class="header-item">
-                <a href="" class="header-link">Як замовити</a>
-            </li>
-            <li class="header-item">
-                <a href="" class="header-link">Відгуки</a>
-            </li>
-            <li class="header-item">
-                <a href="" class="header-link">Контакти</a>
-            </li>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link">Головна</a></li>
+          <li class="nav-item"><a href="#catalog" class="nav-link">Каталог</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Про нас</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Як замовити</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Відгуки </a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Контакти </a></li>
         </ul>
       </nav>
       </div>
     </header>
+
     <main>
-        <!-- Секція герой -->
-        <section class="hero">
-            <div class="container">
-            <div>
-            <h1 class="hero-title"><span class="hero-pos animate__animated animate__bounceInLeft">Неймовірні</span><div class="hero-box"><span class="hero-span">Букети</span> <span class="hero-kviti animate__animated animate__bounceInRight">зі свіжих квітів</span></div></h1>
-            <p class="hero-text">З доставкою по Києву протягом 1 години</p>
-            <button type="button" class="hero-btn" data-modal-open>ЗАМОВИТИ КВІТИ</button>
-            </div>
-            <ul class="hero-list">
-                <li class="hero-item">
-                    <img src="./img/rosa.png" alt="Роза" class="hero-img">
-                    <p class="hero-desk">Щоденне оновлення свіжих квітів</p>
-                </li>
-                <li class="hero-item">
-                    <img src="./img/location.png" alt="Локація" class="hero-img">
-                    <p class="hero-desk">безкоштовна доставка в будь яку точку міста</p>
-                </li>
-                <li class="hero-item">
-                    <img src="./img/earth.png" alt="Земля" class="hero-img">
-                    <p class="hero-desk">більше 1000 сортів квітів з усього світу</p>
-                </li>
-            </ul>
-            <img src="./img/kviti.webp" alt="Квіти" class="hero-kviti-img">
-            <img src="./img/elipse.webp" alt="Еліпс" class="hero-elipse-img">
-            </div>
-        </section>
-        <!-- Каталог -->
-        <section class="catalog">
-            <div class="container">
-            <h2 class="catalog-title">Каталог<div class="catalog-border"></div></h2>
-            <div class="catalog-box">
-            <h3 class="catalog-caption">Доставка квітів в Києві</h3>
-            <ul class="catalog-list">
-                <li class="catalog-item">
-                    <p class="catalog-text">Ціна ...</p>
-                    <img src="./img/strelochka.png" alt="Стрілочка" class="catalog-img">
-                </li>
-                <li class="catalog-item">
-                    <p class="catalog-text">Квіти ...</p>
-                    <img src="./img/strelochka.png" alt="Стрілочка" class="catalog-img">
-                </li>
-                <li class="catalog-item">
-                    <p class="catalog-text">Кому ...</p>
-                    <img src="./img/strelochka.png" alt="Стрілочка" class="catalog-img">
-                </li>
-                <li class="catalog-item">
-                    <p class="catalog-text">Привід...</p>
-                    <img src="./img/strelochka.png" alt="Стрілочка" class="catalog-img">
-                </li>
-                <li class="catalog-item">
-                    <p class="catalog-text">Стиль ...</p>
-                    <img src="./img/strelochka.png" alt="Стрілочка" class="catalog-img">
-                </li>
-            </ul>
-            </div>
-            <h4 class="hits-title">Хіт продажів</h4>
-            <ul class="hits-list">
-                <li class="hits-item">
-                    <img src="./img/flower1.png" alt="Букет квіт" class="hits-flowers">
-                    <img src="./img/heart.png" alt="Серце" class="hits-img">
-                    <h5 class="hits-caption">500 ₴</h5>
-                    <p class="hits-text">Мінібукет 1400-2</p>
-                </li>
-                <li class="hits-item">
-                    <img src="./img/flower2.png" alt="Букет квіт" class="hits-flowers">
-                    <img src="./img/heart.png" alt="Серце" class="hits-img">
-                    <h5 class="hits-caption">800 ₴</h5>
-                    <p class="hits-text">Мінібукет 1600-6</p>
-                </li>
-                <li class="hits-item">
-                    <img src="./img/flower3.png" alt="Букет квіт" class="hits-flowers">
-                    <img src="./img/heart.png" alt="Серце" class="hits-img">
-                    <h5 class="hits-caption">1000 ₴</h5>
-                    <p class="hits-text">Троянда Freedom 51 шт.</p>
-                </li>
-                <li class="hits-item">
-                    <img src="./img/flower4.png" alt="Букет квіт" class="hits-flowers">
-                    <img src="./img/heart.png" alt="Серце" class="hits-img">
-                    <h5 class="hits-caption">680 ₴</h5>
-                    <p class="hits-text">Мінібукет 1400-3</p>
-                </li>
-                <li class="hits-item">
-                    <img src="./img/flower5.png" alt="Букет квіт" class="hits-flowers">
-                    <img src="./img/heart.png" alt="Серце" class="hits-img">
-                    <h5 class="hits-caption">450 ₴</h5>
-                    <p class="hits-text">«Бархатний сезон»</p>
-                </li>
-                <li class="hits-item">
-                    <img src="./img/flower6.png" alt="Букет квіт" class="hits-flowers">
-                    <img src="./img/heart.png" alt="Серце" class="hits-img">
-                    <h5 class="hits-caption">56 ₴</h5>
-                    <p class="hits-text">Нобіліс</p>
-                </li>
-            </ul>
-            <button type="button"  class="hits-btn">Дивитись всі</button>
-            </div>
-        </section>
-        <!-- detalis section -->
-        <section class="details">
-            <div class="container">
-            <h2 class="details-title">Якість в деталях</h2>
-            <ul class="detalis-list">
-                <li class="detalis-item">
-                    <img src="./img/detail-flower1.jpg" alt="flowers" class="detalis-img">
-                    <h3 class="detalis-caption">Контроль свіжості квітів </h3>
-                    <p class="detalis-text">Ми співпрацюємо з кращими постачальниками квітів і готові запропонувати Вам <span>широкий асортимент квітів,</span>  починаючи від місцевих сортів і закінчуючи рідкісними імпортованими варіантами.
-                        Ваша близька людина отримає найкращий подарунок, адже ми ретельно підбираємо кожну квітку для вашого букету.</p>
-                </li>
-                <li class="detalis-item">
-                    <img src="./img/detail-flower2.jpg" alt="worker" class="detalis-img">
-                    <h3 class="detalis-caption">Оформлення букетів</h3>
-                    <p class="detalis-text">Ми готові зібрати <span>унікальний букет по індивідуальному замовленню .</span> Наші флористи втілять в життя будь яку Вашу ідею!</p>
-                </li>
-                <li class="detalis-item">
-                    <div class="detalis-box">
-                    <img src="./img/detail-flower3.jpg" alt="flowers" class="detalis-img">
-                    <div class="detalis-wrap">
-                    <p class="detalis-lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus inventore cumque nihil saepe ipsam non sint cum, explicabo neque molestiae! Quas voluptatum, quisquam animi illo nihil nobis velit ullam porro.</p>
-                    </div>
-                    </div>
-                    <h3 class="detalis-caption">Швидка доставка</h3>
-                    <p class="detalis-text">Ми робимо доставки по Україні протягом <span>3-х годин</span>  з моменту оплати замовлення.</p>
+      <!-- секція герой -->
+      <section class="hero">
+        <div class="container">
+        <h1 class="hero-title">
+          <span class="hero-title-1">Неймовірні</span> 
+          <span class="hero-title-2">Букети</span>
+          <span class="hero-title-3">зі свіжих квітів</span>
+        </h1>
 
-                </li>
-            </ul>
+        <p class="hero-text">З доставкою по Києву протягом 1 години</p>
+        <button type="button" class="hero-button" data-modal-open>ЗАМОВИТИ КВІТИ</button>
+        <!-- <img
+          src="./images/hero_flower.jpg"
+          alt="photo of flowers"
+          class="hero-image"
+        /> -->
+        <ul class="hero-list">
+          <li class="hero-item">
+            <img src="./images/rose.png" alt="photo of rose" class="hero-img" />
+            <p class="hero-description">Щоденне оновлення свіжих квітів</p>
+          </li>
+          <li class="hero-item">
+            <img
+              src="./images/location.png"
+              alt="photo of location"
+              class="hero-img"
+            />
+            <p class="hero-description">
+              безкоштовна доставка в будь яку точку міста
+            </p>
+          </li>
+          <li class="hero-item">
+            <img
+              src="./images/world.png"
+              alt="photo of world"
+              class="hero-img"
+            />
+            <p class="hero-description">
+              більше 1000 сортів квітів з усього світу
+            </p>
+          </li>
+        </ul>
+        </div>
+      </section>
+      <!-- секція каталог -->
+      <section class="catalog">
+        <div class="container">
+        <p class="catalog-text" id="catalog">Каталог</p>
+        <div class="catalog-box">
+        <h2 class="catalog-title">Доставка квітів в Києві</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <p class="catalog-desc">Ціна ...</p>
+            <button type="button" class="catalog-button">
+             <svg class="catalog-icon" width="18" height="16">
+              <use href="./images/symbol-defs.svg#chevron-down"></use>
+             </svg> 
+            </button>
+          </li>
+          <li class="catalog-item">
+            <p class="catalog-desc">Квіти ...</p>
+            <button type="button" class="catalog-button">
+              <svg class="catalog-icon" width="18" height="16">
+                <use href="./images/symbol-defs.svg#chevron-down"></use>
+               </svg> 
+            </button>
+          </li>
+          <li class="catalog-item">
+            <p class="catalog-desc">Кому ...</p>
+            <button type="button" class="catalog-button">
+              <svg class="catalog-icon" width="18" height="16">
+                <use href="./images/symbol-defs.svg#chevron-down"></use>
+               </svg> 
+            </button>
+          </li>
+          <li class="catalog-item">
+            <p class="catalog-desc">Привід...</p>
+            <button type="button" class="catalog-button">
+              <svg class="catalog-icon" width="18" height="16">
+                <use href="./images/symbol-defs.svg#chevron-down"></use>
+               </svg> 
+            </button>
+          </li>
+          <li class="catalog-item">
+            <p class="catalog-desc">Стиль ...</p>
+            <button type="button" class="catalog-button">
+              <svg class="catalog-icon" width="18" height="16">
+                <use href="./images/symbol-defs.svg#chevron-down"></use>
+               </svg> 
+            </button>
+          </li>
+        </ul>
+        </div>
+        <h3 class="catalog-caption">Хіт продажів</h3>
+        <ul class="caption-list">
+          <li class="caption-item">
+            <img
+              src="./images/flower_katalog_1.jpg"
+              alt="flower"
+              class="caption-image"
+            />
+            <svg class="catalog-heart">
+              <use href="./images/symbol-defs.svg#heart"></use>
+            </svg>
+            <p class="caption-desk">Акція</p>
+            <h4 class="caption-subtitle">500 ₴</h4>
+            <p class="caption-slogan">Мінібукет 1400-2</p>
+          </li>
+          <li class="caption-item">
+            <img
+              src="./images/flower_katalog_2.jpg"
+              alt="flower"
+              class="caption-image"
+            />
+            <svg class="catalog-heart">
+              <use href="./images/symbol-defs.svg#heart"></use>
+            </svg>
+            <h4 class="caption-subtitle">800 ₴</h4>
+            <p class="caption-slogan">Мінібукет 1600-6</p>
+          </li>
+          <li class="caption-item">
+            <img
+              src="./images/flower_katalog_3.jpg"
+              alt="flower"
+              class="caption-image"
+            />
+            <svg class="catalog-heart">
+              <use href="./images/symbol-defs.svg#heart"></use>
+            </svg>
+            <h4 class="caption-subtitle">1000 ₴</h4>
+            <p class="caption-slogan">Троянда Freedom 51 шт.</p>
+          </li>
+          <li class="caption-item">
+            <img
+              src="./images/flower_katalog_4.jpg"
+              alt="flower"
+              class="caption-image"
+            />
+            <svg class="catalog-heart">
+              <use href="./images/symbol-defs.svg#heart"></use>
+            </svg>
+            <h4 class="caption-subtitle">680 ₴</h4>
+            <p class="caption-slogan">Мінібукет 1400-3</p>
+          </li>
+          <li class="caption-item">
+            <img
+              src="./images/flower_katalog_5.jpg"
+              alt="flower"
+              class="caption-image"
+            />
+            <svg class="catalog-heart">
+              <use href="./images/symbol-defs.svg#heart"></use>
+            </svg>
+            <p class="caption-desk">Новинка</p>
+            <h4 class="caption-subtitle">450 ₴</h4>
+            <p class="caption-slogan">«Бархатний сезон»</p>
+          </li>
+          <li class="caption-item">
+            <img
+              src="./images/flower_katalog_6.jpg"
+              alt="flower"
+              class="caption-image"
+            />
+            <svg class="catalog-heart">
+              <use href="./images/symbol-defs.svg#heart"></use>
+            </svg>
+            <p class="caption-desk">з водою</p>
+            <h4 class="caption-subtitle">56 ₴</h4>
+            <p class="caption-slogan">Нобіліс</p>
+          </li>
+        </ul>
+        <button type="button" class="catalog-btn">Дивитись всі</button>
+        </div>
+      </section>
+      <!-- Якість в деталях -->
+      <section class="details">
+        <div class="container">
+        <p class="details-text" id="about">Якість в деталях</p>
+        <ul class="details-list">
+          <li class="details-item">
+            <img src="./images/detailflower1.jpg" alt="flower"  class="details-img"/>
+            <div class="details-box">
+            <h2 class="details-title">Контроль свіжості квітів</h2>
+            <p class="details-desk">
+              Ми співпрацюємо з кращими постачальниками квітів і готові
+              запропонувати Вам <span class="details-span">широкий асортимент квітів</span>,
+              починаючи від місцевих сортів і закінчуючи рідкісними
+              імпортованими варіантами. Ваша близька людина отримає найкращий
+              подарунок, адже ми ретельно підбираємо кожну квітку для вашого
+              букету.
+            </p>
             </div>
-        </section>
-
-        <!-- form section -->
-            <section class="form">
-                <div class="container">
-                <h2 class="form-title">Не можете визначитись з вибором букету?</h2>
-                <p class="form-text"><span>Відправте заявку</span> і Вам зателефонують протягом однієї хвилини</p>
-           
-                <form class="form-form">
-                    <input type="text" placeholder="name" class="form-input">
-                    <img src="./img/user-icon.png" alt="" class="form-img">
-                    <input type="tel" placeholder="phone num" class="form-input">
-                    <img src="./img/tel-icon.png" alt="" class="form-img">
-                    <button type="submit" class="form-btn">Залишити заявку</button>
-                    <!-- <input type="submit"> -->
-                </form>
-                <h3 class="form-caption">Наш менеджер по телефону: </h3>
-                <ul class="form-list">
-                    <li class="form-item">
-                        <img src="./img/checkmark-icon.png" alt="" class="form-icon">
-                        <p class="form-desk"><span>Відповість на будь які запитання</p>
-                    </li>
-                    <li class="form-item">
-                        <img src="./img/checkmark-icon.png" alt="" class="form-icon">
-                        <p class="form-desk"><span>Підбере рішення</span> відповідно 
-                            до ваших запитів та бажань</p>
-                    </li>
-                    <li class="form-item">
-                        <img src="./img/checkmark-icon.png" alt="" class="form-icon">
-                        <p><span>Підготує унікальну пропозицію</span>
-                            та детально розповість Вам про наші букети</p>
-                    </li>
-                    <li class="form-item">
-                        <img src="./img/checkmark-icon.png" alt="" class="form-icon">
-                        <p class="form-desk"><span>Оформить</span> для Вас подарунок-сюрприз</p>
-                    </li>
-                </ul>
-                </div>
-            </section>
-            <!-- our clioents section -->
-            <section class="clients">
-                <div class="container">
-                <h2 class="clients-title">Наші клієнти</h2>
-                <ul class="clients-list">
-                    <li class="clients-item"><a href="#" class="clients-link"><img src="./img/larrow.png" alt="back" class="clients-images"></a></li>
-                    <li class="clients-item"><a href="#" class="clients-link"><img src="./img/rarrow.png" alt="forward" class="clients-images"></a></li>
-                </ul>
-                <ul class="client-list">
-                    <li class="client-itm"><img class="client-photo" src="./img/client-1.jpg" alt="client`s photo"></li>
-                    <li class="client-itm"><img class="client-photo" src="./img/client-2.jpg" alt=""></li>
-                    <li class="client-itm"><img class="client-photo" src="./img/client-3.jpg" alt=""></li>
-                    <li class="client-itm"><img class="client-photo" src="./img/client-4.jpg" alt=""></li>
-                </ul>
-                </div>
-            </section>
+          </li>
+          <li class="details-item">
+            <img src="./images/detailflower2.jpg" alt="flower"  class="details-img" />
+            <div class="details-box">
+            <h2 class="details-title">Оформлення букетів</h2>
+            <p  class="details-desk">
+              Ми готові зібрати
+              <span class="details-span">унікальний букет по індивідуальному замовленню</span>. Наші
+              флористи втілять в життя будь яку Вашу ідею!
+            </p>
+            </div>
+          </li>
+          <li class="details-item">
+            <div class="details-img-box">
+            <img src="./images/detalflower3.jpg" alt="flower"  class="details-img" />
+            <p class="details-img-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis modi, dolorem velit, quae itaque excepturi et voluptatum eius quos unde pariatur facere maxime nam eos quis? Eos omnis ad error reprehenderit, voluptatibus alias repellendus recusandae id saepe quaerat, quia architecto earum consequatur vitae, asperiores culpa quae quo unde accusamus nobis! Ea reiciendis officia est voluptates deserunt officiis, dignissimos illo maxime repellendus quo consequatur similique iusto aliquid et magnam autem quam eaque numquam temporibus exercitationem voluptatibus atque nihil suscipit? Soluta, autem. Praesentium consequuntur dignissimos fugit quos esse, harum consequatur sit expedita inventore autem excepturi quod at maiores natus, eos aspernatur! Voluptatem.</p>
+            </div>
+            <div class="details-box">
+            <h2 class="details-title">Швидка доставка</h2>
+            <p  class="details-desk">
+              Ми робимо доставки по Україні протягом <span class="details-span">3-х годин</span> з
+              моменту оплати замовлення.
+            </p>
+            </div>
+          </li>
+        </ul>
+        </div>
+      </section>
+      <!-- секція форми -->
+      <section class="forms">
+        <div class="container">
+        <h2 class="forms-title">Не можете визначитись з вибором букету?</h2>
+        <div class="forms-wrap">
+        <form class="form">
+          <p class="forms-text"><span class="forms-span">Відправте заявку</span> і Вам зателефонують протягом однієї хвилини</p>
+          <div class="forms-box">
+          <input type="text" placeholder="Ім’я" class="form-input"/>
+          <a href="#" class="forms-link">
+            <svg class="form-icon">
+              <use href="./images/symbol-defs.svg#person"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="forms-box">
+          <input type="tel" placeholder="Телефон" class="form-input"/>
+          <a href="#" class="forms-link">
+            <svg class="form-icon">
+              <use href="./images/symbol-defs.svg#phone"></use>
+            </svg>
+          </a>
+        </div>
+          <button type="submit" class="form-button">Залишити заявку</button>
+        </form>
+        <div class="forms-tag">
+        <h3 class="forms-caption">Наш менеджер по телефону:</h3>
+        <ul class="forms-list">
+          <li class="forms-item">
+            <svg class="form-check">
+              <use href="./images/symbol-defs.svg#check"></use>
+            </svg>
+            <p class="forms-desk"><span class="forms-bold">Відповість</span> на будь які запитання</p>
+          </li>
+          <li class="forms-item">
+            <svg class="form-check">
+              <use href="./images/symbol-defs.svg#check"></use>
+            </svg>
+            <p class="forms-desk"><span class="forms-bold">Підбере рішення</span> відповідно до ваших запитів та бажань</p>
+          </li>
+          <li class="forms-item">
+            <svg class="form-check">
+              <use href="./images/symbol-defs.svg#check"></use>
+            </svg>
+            <p class="forms-desk">
+              <span class="forms-bold">Підготує унікальну пропозицію</span> та детально розповість Вам про наші
+              букети
+            </p>
+          </li>
+          <li class="forms-item">
+            <svg class="form-check">
+              <use href="./images/symbol-defs.svg#check"></use>
+            </svg>
+            <p class="forms-desk"><span class="forms-bold">Оформить</span> для Вас подарунок-сюрприз</p>
+          </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+      </section>
+      <!-- секція клієнти  -->
+      <section class="inviseters">
+        <div class="container">
+        <h2 class="inviseters-title">Наші клієнти</h2>
+        <ul class="inviseters-list">
+          <li class="inviseters-item">
+            <img src="./images/clein1.jpg" alt="clein1" class="inviseters-img" />
+          </li>
+          <li class="inviseters-item">
+            <img src="./images/clein2.jpg" alt="clein2" class="inviseters-img" />
+          </li>
+          <li class="inviseters-item">
+            <img src="./images/clein3.jpg" alt="clein3" class="inviseters-img" />
+          </li>
+          <li class="inviseters-item">
+            <img src="./images/clein4.jpg" alt="clein4" class="inviseters-img" />
+          </li>
+        </ul>
+        <!-- <ul class="arrow-list"> -->
+          <!-- <li class="arrow-item"> -->
+            <svg class="arrow-icon-left">
+              <use href="./images/symbol-defs.svg#icon-right"></use>
+            </svg>
+          <!-- </li> -->
+          <!-- <li class="arrow-item"> -->
+            <svg class="arrow-icon-right">
+              <use href="./images/symbol-defs.svg#icon-right"></use>
+            </svg>
+          <!-- </li> -->
+        <!-- </ul> -->
+      </div>
+      </section>     
     </main>
 
-    <!----------- FOOTER ----------->
-    <footer>
-        <div class="container">
-        <nav>
-        <ul>
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Відгуки</a></li>
-            <li><a href="#">Як замовити</a></li>
-            <li><a href="#">Контакти</a></li>
+    <footer class="footer">
+      <div class="container footer-box">
+      <ul class="footer-nav">
+        <li class="footer-item"><a href="#" class="footer-link">Головна</a></li>
+        <li class="footer-item"><a href="#" class="footer-link">Каталог</a></li>
+        <li class="footer-item"><a href="#" class="footer-link">Відгуки</a></li>
+        <li class="footer-item"><a href="#" class="footer-link">Як замовити</a></li>
+        <li class="footer-item"><a href="#" class="footer-link">Контакти</a></li>
+      </ul>
+      <div class="footer-wrap">
+      <a href="./index.html" class="footer-logo">FlowerLover 
+        <svg class="footer-img">
+          <use href="./images/symbol-defs.svg#icon-lotos"></use>
+        </svg>
+        <!-- <img src="./images/logo.png" alt="logo_flower" class="footer-img"/> -->
+    </a>
+      <ul class="social-list">
+        <li class="social-item"><img src="./images/logophone.png" alt="logophone" class="social-img" /></li>
+        <li class="social-item"><img src="./images/instagram.png" alt="instagram" class="social-img" /></li>
+        <li class="social-item"><img src="./images/logofacebook.png" alt="logofacebook" class="social-img" /></li>
+      </ul>
+      </div>
+      <address class="address">
+        <ul class="address-list">
+          <li class="address-item">
+            <a href="tel:+380977775577" class="address-link">+38097 777 55 77</a>
+            <p class="address-text">Наш телефон</p>
+          </li>
+          <li class="address-item">
+            <a href="mailto:info@floverlover.ua" class="address-link">info@floverlover.ua</a>
+            <p class="address-text">Контактний е-mail</p>
+          </li>
+          <li class="address-item">
+            <a
+              href="https://maps.visicom.ua/c/30.52522,50.45138,17/f/ADR3K0MXUAGDN8T7BJ?lang=uk"
+              target="_blank" class="address-link"
+              >Київ <br>вул. Маріупольська, 14.</a
+            >
+            <p class="address-text">Наш магазин</p>
+          </li>
         </ul>
-    </nav>
-    <a href="index.html"><img src="./img/logo.png" alt="logo">FlowerLover</a>  
-    <ul>
-        <li><a href="tel:+380977775577"><img src="./img/phone-icon.png" alt="tel"></a></li>
-        <li><a href="#"><img src="./img/flowerlover-inst-icon.png" alt="inst"></a></li>
-        <li><a href="#"><img src="./img/flowerlover-facebook.png" alt="facebook"></a></li>
-    </ul>
-
-
-    <address>
-        <ul>
-            <li>
-                <a href="tel:+380977775577">+38097 777 55 77</a>
-                <p> Наш телефон</p>
-            </li>
-            <li>
-                <a href="mailto:info@floverlover.ua">info@floverlover.ua</a>
-                <p>Контактний е-mail</p>
-            </li>
-            <li>
-                <a href="#" target="_blank">Київ вул. Маріупольська, 14.</a>
-                <p>Наш магазин</p>
-            </li>
-        </ul>
-    </address>
-        </div>
+      </address>
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-           <form class="modal-form">
-            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-            <label for="name" class="modal-signature">Ім'я</label>
-            <div  class="modal-wraper">
-                <input type="text" id="name" class="modal-input" required>
-            <svg class="modal-icon" >
-                <use href="./img/symbol-defs.svg#icon-user"></use>
-            </svg>
-        </div >
-            <label for="phone" class="modal-signature">Телефон</label>
-           <div  class="modal-wraper">
-             <input type="tel" id="phone" class="modal-input" required pattern="^\+?3?8?(0\d{9})$" placeholder="+380XXXXXXXXX">
-            <svg class="modal-icon">
-                <use href="./img/symbol-defs.svg#icon-phone"></use>
-            </svg>
-        </div >
-            <label for="mail" class="modal-signature">Пошта</label>
-            <div  class="modal-wraper">
-            <input type="email" name="" id="mail" class="modal-input" required>
-            <svg class="modal-icon">
-                <use href="./img/symbol-defs.svg#icon-mail"></use>
-            </svg>
-        </div>           
-        <label for="com" class="modal-signature">Коментар</label>
-            <textarea name="" id="com" class="modal-com" placeholder="Введіть текст"></textarea>
-            <label class="modal-chek">
-                <input type="checkbox" class="chek-input" required> 
-                <span class="chek-span">Погоджуюся з розсилкою та приймаю</span> 
-                <a href="#" class="check-link"> Умови договору</a>
-            </label>
-            <button type="submit" class="modal-btn">Відправити</button>
-           </form> 
-                <button type="button" class="btn-close" data-modal-close><svg class="icon-close">
-                    <use href="./img/symbol-defs.svg#icon-cross"></use>
-                </svg></button>
+      <div class="modal">
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal-form">
+          <label for="name" class="label-modal">Ім'я</label>
+          <div class="wrapper">
+          <input type="text" id="name" class="input-modal" required>
+          <svg class="input-icon">
+            <use href="./images/symbol-defs.svg#icon-people-svg"></use>
+          </svg>
         </div>
+          <label for="tell" class="label-modal">Телефон</label>
+          <div class="wrapper">
+          <input type="tel" id="tell" class="input-modal" required>
+          <svg class="input-icon">
+            <use href="./images/symbol-defs.svg#icon-phone-svg"></use>
+          </svg>
+          </div>
+          <label for="email" class="label-modal">Пошта</label>
+          <div class="wrapper">
+          <input type="email" id="email" class="input-modal" required>
+           <svg class="input-icon">
+            <use href="./images/symbol-defs.svg#icon-email-svg"></use>
+          </svg>
+          </div>
+          <label for="text" class="label-comment">Коментар</label>
+          <textarea name="text" id="text" placeholder="Введіть текст" class="text-comment"></textarea>
+          <label class="label-wrapper">
+            <input type="checkbox" class="input-box" required>
+            <span class="text-checked">Погоджуюся з розсилкою та приймаю</span>
+            <a href="https://www.facebook.com/"  target="_blank" class="link-modal">Умови договору</a>
+          </label>
+          
+          <button type="submit" class="modal-button">Відправити</button>
+        </form>
+        <button type="button" class="button-closee" data-modal-close>
+          <svg class="icon-close">
+            <use href="./images/symbol-defs.svg#icon-burger-svg"></use>
+          </svg>
+        </button>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
-</body>
+  </body>
 </html>
