@@ -4,37 +4,33 @@
     text-align: center;
 }
 
-.catalog-text {
-color: $accent-color;
-font-family: "Playfair Display", serif;
-font-size: 36px;
-font-weight: 600;
-line-height: 1.33;
-text-align: start;
+.catalog__text {
+    color: $accent-color;
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.33;
+    text-align: start;
 }
 
-.catalog-box {
+.catalog__box {
     width: 1085px;
     background-color: $accent-color;
     margin: 0 auto;
     border-radius: 15px;
 }
 
-.catalog-title {
+.catalog__title {
     color: $text-color;
-text-align: center;
-font-family: "Playfair Display", serif;
-font-size: 36px;
-font-weight: 600;
-line-height: 1.33;
-margin-bottom: 20px;
-
-
-
-
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.33;
+    margin-bottom: 20px;
 }
 
-.catalog-list {
+.catalog__list {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -43,48 +39,48 @@ margin-bottom: 20px;
     border-radius: 15px;
 }
 
-.catalog-item {
+.catalog__item {
     display: flex;
 }
 
 
-.catalog-desc {
+.catalog__desc {
     color: $text-color;
-font-size: 18px;
-font-weight: 300;
-line-height: 1.27;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.27;
 }
 
-.catalog-button {
+.catalog__button {
     background-color: transparent;
     border: none;
 }
 
-.catalog-icon {
+.catalog__icon {
     fill: #FFFFFF;
 }
 
-.catalog-icon:hover {
+.catalog__icon:hover {
     fill: #000;
 }
 
-.catalog-item:nth-child(1) .catalog-desc {
+.catalog__item:nth-child(1) .catalog__desc {
     margin-right: 74px;
 }
 
-.catalog-item:nth-child(2) .catalog-desc {
+.catalog__item:nth-child(2) .catalog__desc {
     margin-right: 157px;
 }
 
-.catalog-item:nth-child(3) .catalog-desc {
+.catalog__item:nth-child(3) .catalog__desc {
     margin-right: 70px;
 }
 
-.catalog-item:nth-child(4) .catalog-desc {
+.catalog__item:nth-child(4) .catalog__desc {
     margin-right: 148px;
 }
 
-.catalog-item:nth-child(5) .catalog-desc {
+.catalog__item:nth-child(5) .catalog__desc {
     margin-right: 63px;
 }
 
@@ -94,7 +90,7 @@ line-height: 1.27;
 
 
 
-.catalog-heart {
+.catalog__heart {
     width: 28px;
     height: 28px;
     fill: #B02E51;
@@ -103,18 +99,18 @@ line-height: 1.27;
    right: 15px;
 }
 
-.catalog-caption {
+.catalog__caption {
     color:$text-color;
-text-align: center;
-font-family: "Playfair Display", serif;
-font-size: 36px;
-font-weight: 600;
-line-height: 1.33;
-margin-top: 50px;
-margin-bottom: 20px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.33;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
-.caption-list {
+.caption__list {
     display: flex;
     gap: 75px;
     flex-wrap: wrap;
@@ -123,23 +119,23 @@ margin-bottom: 20px;
    
 }
 
-.caption-item {
+.caption__item {
     border-radius: 15px;
     background: #FFF;
     padding: 15px;
     position: relative;
 }
 
-.caption-desk {
+.caption__desk {
     color: $text-color;
-font-size: 15px;
-font-weight: 600;
-line-height: 1.26;
-letter-spacing: 0.75px;
-text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.26;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
 }
 
-.caption-subtitle {
+.caption__subtitle {
     color: $background-color;
     font-size: 34px;
     font-weight: 300;
@@ -147,26 +143,25 @@ text-transform: uppercase;
     text-align: center;
 }
 
-.caption-slogan {
+.caption__slogan {
     color: $background-color;
-font-size: 16px;
-font-weight: 300;
-line-height: 1.25;
-text-align: center;
-margin-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.25;
+    text-align: center;
+    margin-top: 10px;
 }
 
-.catalog-btn {
+.catalog__btn {
     color: $text-color;
-font-size: 16px;
-font-weight: 400;
-line-height: 1.25; 
-letter-spacing: 1.6px;
-text-transform: uppercase;
-margin-top: 20px;
-background-color: transparent;
- border-radius: 15px;
-border: 1px solid #FFF; ;
-padding: 15px 30px;
-
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25; 
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    background-color: transparent;
+     border-radius: 15px;
+    border: 1px solid #FFF; ;
+    padding: 15px 30px;
 }
