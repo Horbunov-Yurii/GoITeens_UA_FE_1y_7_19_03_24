@@ -1,66 +1,68 @@
-.details-text {
+.details {
+  &__text {
     color: $accent-color;
     font-family: "Playfair Display", serif;
-font-size: 36px;
-font-weight: 600;
-line-height: 1.33;
-margin-bottom: 171px;
-text-align: end;
-}
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.33;
+    margin-bottom: 171px;
+    text-align: end;
+  }
 
-.details-item {
+  &__item {
     display: flex;
     gap: 121px;
     align-items: center;
-}
 
-.details-item:nth-child(2) {
-    flex-direction: row-reverse;
-}
-
-.details-img-box {
-    position: relative;
-}
-
-.details-img {
-    overflow: hidden;
-}
-
-.details-img-box:hover {
-    .details-img-desc{
-        opacity: 1;
+    &:nth-child(2) {
+      flex-direction: row-reverse;
     }
+  }
+
+  &__img-box {
+  position: relative;
+  &:hover {
+  .details-img-desc {
+    opacity: 1;
+  }
+}
 }
 
-.details-img-desc {
-    width: 100%;
-    height: 100%;
-    color: white;
-    background-color: rgba(100, 0,0, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 50px;
-    opacity: 0;
+&__img {
+  overflow: hidden;
+}
+&__img-desc {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(100, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px;
+  opacity: 0;
 }
 
-.details-title {
-    color:$text-color;
-font-size: 32px;
-font-weight: 400;
-line-height: 1.25;
-margin-bottom: 16px;
+&__title {
+  color: $text-color;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 16px;
 }
-.details-desk {
-    color: $additional-accent;
-font-size: 20px;
-font-weight: 300;
-line-height: 1.25;
-width: 527px;
+
+&__desk {
+  color: $additional-accent;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.25;
+  width: 527px;
 }
-.details-span {
-    color:$text-color;
-font-size: 20px;
-font-weight: 600;
-line-height: 1.25;
+
+&__span {
+  color: $text-color;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+}
 }
